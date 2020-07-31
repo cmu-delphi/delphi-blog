@@ -5,27 +5,11 @@
 
     "// web sources",
      {
-      "type": "move",
-      "src": "public/*",
-      "dst": "/var/www/html/blog/",
-      "match": "^.*\\.(html|css|xml|js)$"
-     },
-
-    "// images",
-    {
-      "type": "move",
-      "src": "public/*",
-      "dst": "/var/www/html/blog/",
-      "match": "^.+\\.(jpg|png|svg)$"
-    },
-
-    "// fonts",
-    {
-      "type": "move",
-      "src": "public/*",
-      "dst": "/var/www/html/blog/",
-      "match": "^.+\\.(woff|ttf|woff2)$"
-    }
-
+       "type": "copytree",
+       "src": "public/",
+       "dst": "/var/www/html/blog/",
+       "recursive": true,
+       "match": "^.*\\.(html|css|xml|js|jpg|png|svg|woff|ttf|woff2)$"
+     }
   ]
 }
