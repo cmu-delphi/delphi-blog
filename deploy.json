@@ -5,7 +5,7 @@
 
     "// web sources",
      {
-       "type": "copytree",
+       "type": "copymove",
        "src": "public/",
        "dst": "/var/www/html/blog/",
        "recursive": true,
