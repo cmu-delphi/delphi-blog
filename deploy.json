@@ -8,7 +8,7 @@
       "type": "move",
       "src": "public/*",
       "dst": "/var/www/html/blog/",
-      "match": "^.*\\.(html|css|xml|js)$",
+      "match": "^.*\\.(html|css|xml|js)$"
      },
 
     "// images",
