@@ -1,0 +1,37 @@
+baseurl = "/blog/"
+languageCode = "en-us"
+title = "Delphi Blog"
+theme = "hugo-theme-noteworthy"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+relativeURLs = true
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "Delphi Group"
+    url = "https://delphi.cmu.edu"
+[[menu.main]]
+    name = "COVIDcast Maps"
+    url = "https://covidcast.cmu.edu"
+[[menu.main]]
+    name = "COVIDcast Data"
+    url = "https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/cmu-delphi"
+
+[params]
+    description = "The blog of the Delphi epidemiological forecasting group at Carnegie Mellon University."
+
+    [params.logo]
+    url = "delphi_logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+

@@ -1,0 +1,89 @@
+1. Hello World. Roni + Ryan
+- Introduction, mission statement, etc
+- Explain that we've been up to a lot since we started the pandemic effort, but
+haven't really documented it.  Next several posts are about this
+- Also use this space to acknowledge our partners and sponsors 
+
+*****
+In every blog post that follows: describe credits carefully! That is, describe
+who did what, for each part of what made the project-at-hand (topic of the blog
+post) possible.  
+
+As a subtitle, right at the top, make it visible. This will give the right group
+members proper credit even if they didn't write the blog post
+*****
+
+2. What We've Been Up To: "Simple" Statistical Forecasts.  Larry + Ryan 
+- Explain the CMUDelphi-TimeSeries model. Position it very carefully. It is
+simple and more like a "smart straw man", instead of "magic".  
+- Give basic overview, basic evaluation details, and our summary of its
+strengths and weaknesses 
+- Long technical appendix of plots (or link to an external notebook?) 
+- Preview the other forecasting ideas we're working on
+- Preview the evaluation forecasting R package to come...
+
+3. What We've Been Up To: Symptom Surveys. Ryan + ?
+- Explain Facebook and Google survey setups, and signals. 
+- For each, describe basic methodology, some basic views of the data and
+potentially interesting preliminary results
+- Describe the relationship between the two (wrt the community question?
+- Preview the covidcast R package (to be developed further/explained in a later
+post) 
+
+4. What We've Been Up To: Medical Claims. Roni + ?
+- Explain HSP signals
+- Doctor visits signal, hospital admissions signal, give important details,
+describe backfill issue and fix 
+- Again, basic views of the data and potentially interesting preliminary results
+- DO NOT describe Change Healthcare yet, but mention that we added a substantial
+volume of new medical claims data (express sufficient enthusiasm) and say we
+will report in a future post 
+
+5. What We've Been Up To: COVIDcast Map. Jodi + Roni 
+- Describe the map, basic how-to's
+- Interesting things you can see from the map tool
+- Here we can also take the time to basically describe the 
+remaining signals that aren't "exciting enough" to warrant their
+own post, like Google Search Trends, SafeGraph, etc.
+
+6. What We've Been Up To: COVIDcast API.  Katie + Alex 
+- Describe the API, tutorial for basic data access queries
+- This post can be short but sweet 
+- If suitable, can even show people how to construct a query string to pass to
+covidcast.cmu.edu to get a custom map
+- If suitable, can even discuss issue dates and their importance 
+
+7. What We've Been Up To: `covidcast` R Package. Alex + Ryan 
+- API access from within R.  Also describe Python side which is less developed
+but still supports API access 
+- Show off our cool plotting tools: choro maps, bubble maps, time series 
+- Hopefully by this point we'll have more stuff to show off too, like basic
+correlation functions, signal processing functions, etc.
+
+Other blog posts that are pretty much ready to go, because we've already written
+notebook on them.  Not numbered because I don't know where they should go: 
+
+x. Thoughts on Forecast Scoring Rules. Ryan
+- I already have a notebook written for this. Just a discussion of the weighted
+interval score, which the CDC landed on for forecast scoring
+
+x. Thoughts on Density vs Quantile Ensembles. Ryan
+- Again, I already have a notebook written for this. Discussion of the
+differences between stacking densities and stacking quantiles 
+
+More things we should write about once we're ready to. Not numbered because I
+don't know where they should go: 
+
+x. Other forecasting models
+
+x. Forecasting R package
+
+x. Hot spot detection / early warning with the COVIDcast indicators
+
+x. Insights from the full / expanded Facebook survey
+
+x. Insights from Change Healthcare data
+
+x. Highlights of our issue date/lag system and how it's useful for forecasters.
+Illustrated with examples of backfill from our signals (like DV).
+

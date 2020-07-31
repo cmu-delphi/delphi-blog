@@ -1,0 +1,2 @@
+blogdown::html_page:
+  dev: "svg"
