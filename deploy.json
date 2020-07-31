@@ -1,0 +1,31 @@
+{
+  "type": "delphi deploy config",
+  "version": 1,
+  "actions": [
+
+    "// web sources",
+     {
+      "type": "move",
+      "src": "public/*",
+      "dst": "/var/www/html/blog/",
+      "match": "^.*\\.(html|css|xml|js)$",
+     },
+
+    "// images",
+    {
+      "type": "move",
+      "src": "public/*",
+      "dst": "/var/www/html/blog/",
+      "match": "^.+\\.(jpg|png|svg)$"
+    },
+
+    "// fonts",
+    {
+      "type": "move",
+      "src": "public/*",
+      "dst": "/var/www/html/blog/",
+      "match": "^.+\\.(woff|ttf|woff2)$"
+    }
+
+  ]
+}
