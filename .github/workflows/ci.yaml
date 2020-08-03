@@ -1,0 +1,30 @@
+on:
+  push
+
+name: ci
+
+# based on https://github.com/r-lib/actions/blob/master/examples/blogdown.yaml
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+      - name: Install pandoc
+        uses: r-lib/actions/setup-pandoc@v1
+
+      - name: Run Prepare Script
+        run: |
+          Rscript ./R/prepare.R
+      - name: Build site
+        run: |
+          R -e 'blogdown::build_site()'
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./public
+
