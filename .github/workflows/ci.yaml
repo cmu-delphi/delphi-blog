@@ -15,6 +15,13 @@ jobs:
         uses: r-lib/actions/setup-r@master
       - name: Install pandoc
         uses: r-lib/actions/setup-pandoc@v1
+      - name: Restore Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.local/share/renv
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
 
       - name: Run Prepare Script
         run: |
