@@ -1,7 +1,7 @@
 baseurl = "/blog/"
 languageCode = "en-us"
 title = "Delphi Blog"
-theme = "hugo-theme-noteworthy"
+theme = "cmu"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
