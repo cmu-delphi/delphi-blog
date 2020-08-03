@@ -14,9 +14,7 @@ jobs:
       - name: Setup R
         uses: r-lib/actions/setup-r@master
       - name: Install pandoc
-        run: |
-          brew install pandoc
-          brew install pandoc-citeproc
+        uses: r-lib/actions/setup-pandoc@v1
       - name: Restore Cache
         uses: actions/cache@v2
         with:
