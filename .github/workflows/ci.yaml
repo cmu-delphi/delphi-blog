@@ -28,7 +28,7 @@ jobs:
           Rscript ./R/prepare.R
       - name: Build site
         run: |
-          R -e 'blogdown::build_site()'
+          Rscript -e 'blogdown::build_site()'
 
       - name: Deploy Main
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
