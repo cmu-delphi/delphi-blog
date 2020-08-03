@@ -7,7 +7,7 @@ name: ci
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -18,7 +18,7 @@ jobs:
       - name: Restore Cache
         uses: actions/cache@v2
         with:
-          path: ~/Library/Application Support/renv
+          path: "%LOCALAPPDATA%/renv"
           key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
           restore-keys: |
             ${{ runner.os }}-renv-
