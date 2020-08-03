@@ -3,15 +3,15 @@
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
     {{ partial "head.html" . }}
     <body>
-        <img id="wordmarkPrint" alt="" src="//www.cmu.edu/common/standard-v6/images/cmu-wordmark.png">
         <div id="container">
             {{ partial "header.html" . }}
             <div id="content" class="content-container">
                 {{ block "main" . }}
                 {{ end }}
                 {{ partial "math.html" . }}
+                {{ partial "highlight.html" . }}
             </div>
-            {{ partial "footer-mobile.html" . }}
+            {{ partial "footer.html" . }}
         </div>
 
         <script src="//www.cmu.edu/common/standard-v6/js/list.min.js" type="text/javascript"></script>

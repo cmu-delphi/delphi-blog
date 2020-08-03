@@ -1,6 +1,9 @@
 {{ define "main" }}
-
+<div class="article-content content">
 <h1 class="post-title">{{ .Title }}</h1>
+    {{ if .Params.author }}
+    <span>{{ .Params.author }}</span>
+    {{ end }}
     {{ if .Date }}
     <time>{{ .Date.Format "January 2, 2006" }}</time>
     {{ end }}
@@ -18,7 +21,7 @@
             const kofiId = '{{ .Site.Params.Kofi }}';
             kofiwidget2.init('Support Me on Ko-fi', '#29abe0', kofiId);
             kofiwidget2.draw();
-        </script> 
+        </script>
 
     {{ end }}
 
@@ -31,4 +34,5 @@
       {{ end }}
     </div>
 
+</div>
 {{end}}

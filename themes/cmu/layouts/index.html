@@ -1,36 +1,34 @@
 {{ define "main" }}
-<div class = "article-content">
-        {{ if isset .Site.Params "description" }}
-        <div class="description">
-            <p>{{ .Site.Params.Description | markdownify }}</p>
-        </div>
-        {{ end }}
+<div class="article-content content">
         <!-- Range over the pages and only include the ones that are a post type -->
         {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
         {{ range (.Paginate $pages).Pages }}
         <article>
-            <h2>
+            <em class="date">{{ .Date.Format "January 2, 2006" }}</em>
+            <h1>
                 <a href="{{ .Permalink }}">
                     {{ .Title }}
                 </a>
-            </h2>
-            <div>
-                <p>{{ .Summary }}</p>
-                {{ if (and (.Site.Params.showReadMore) (.Truncated)) }}
-                <p><a href="{{ .RelPermalink }}">Read more...</a></p>
+            </h1>
+            {{ if .Params.author }}
+            <div class="contact">
+                <span>{{ .Params.author }}</span>
+            </div>
+            {{ end }}
+            {{ if .Summary }}
+            <p>{{ chomp .Summary}}</p>
+            {{ end }}
+            {{ if (and (.Site.Params.showReadMore) (.Truncated)) }}
+            <p><a href="{{ .RelPermalink }}">Read more...</a></p>
+            {{ end }}
+            <div class="post-footer">
+                <!-- Display tags -->
+                {{if .Params.tags}}
+                    {{ range .Params.tags }}
+                        <a class="tag" href="/tags/{{ . | urlize }}">#{{.}}</a>
+                    {{ end }}
                 {{ end }}
             </div>
-            <div class="post-footer">
-            <time>{{ .Date.Format "January 2, 2006" }}</time>
-
-            <!-- Display tags -->
-            {{if .Params.tags}}
-                {{ range .Params.tags }}
-                    <a class="tag" href="/tags/{{ . | urlize }}">#{{.}}</a>
-                {{ end }}
-            {{ end }}
-            </div> 
-           
         </article>
         {{ end }}
     </div>
@@ -47,8 +45,8 @@
                             <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
                             <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
                         </g>
-                </svg>  
-                Newer          
+                </svg>
+                Newer
             </a>
             {{ end }}
             {{ if $paginator.HasNext }}
@@ -60,7 +58,7 @@
                                 <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
                             </g>
                     </svg>
-                        
+
                 </a>
             {{ end }}
         </div>

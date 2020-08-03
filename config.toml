@@ -28,6 +28,8 @@ relativeURLs = true
 
 [params]
     description = "The blog of the Delphi epidemiological forecasting group at Carnegie Mellon University."
+    highlight = true
+    math = true
 
     [params.logo]
     url = "delphi_logo.png"
