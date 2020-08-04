@@ -25,6 +25,16 @@ $code: Menlo,Monaco,"Courier New",monospace;
 /* STYLES ========================================================================== */
 // TEXT
 
+.article-content {
+    position: relative;
+}
+
+.article-content .social {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 footer > nav {
     display: none;
 }
