@@ -5,4 +5,5 @@
 .DS_Store
 /public
 /resources/_gen
-/content/post/*.html
+/content/**/*.html
+/static/post/**/*
