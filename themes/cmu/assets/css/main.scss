@@ -23,8 +23,28 @@ $code: Menlo,Monaco,"Courier New",monospace;
 @import "vendor/syntax";
 
 /* STYLES ========================================================================== */
-
 // TEXT
+
+footer > nav {
+    display: none;
+}
+
+.section {
+    padding-top: 1em;
+}
+
+time {
+    font-style: italic;
+    padding-left: 0.2em;
+}
+
+time + h1 {
+    padding: 0.1em 0 0.5em 0;
+}
+
+.post-title {
+    padding-bottom: 0.5em;
+}
 
 #container {
     min-height: 100vh;
@@ -45,6 +65,8 @@ p:empty {
     margin-bottom: 1em;
     line-height: 1.75em;
     color: $gray-light;
+    text-decoration: none;
+    border: none !important;
 }
 
 .tag:visited {
@@ -235,7 +257,8 @@ table {
     font-size: 0.95rem;
     color: $gray-light;
     border-bottom: 1px solid $gray-lightest;
-    padding-bottom: 1.8em;
+    padding-bottom: 0.2em;
+    margin-bottom: 1.8em;
 }
 
 .hidden {

@@ -1,9 +1,7 @@
-<div>
-  <nav id="nav">
-    <ul>
-      {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
-      {{ end }}
-    </ul>
-  </nav>
-</div>
+<nav id="nav">
+  <ul>
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</nav>

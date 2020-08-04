@@ -1,11 +1,13 @@
 {{ define "main" }}
 <div class="article-content content">
-<h1 class="post-title">{{ .Title }}</h1>
+    <time>{{ .Date.Format "January 2, 2006" }}</time>
+    <h1 class="post-title">{{ .Title }}</h1>
     {{ if .Params.author }}
-    <span>{{ .Params.author }}</span>
+    <div class="contact">
+        <span>{{ .Params.author }}</span>
+    </div>
     {{ end }}
     {{ if .Date }}
-    <time>{{ .Date.Format "January 2, 2006" }}</time>
     {{ end }}
     <div>
         <p>

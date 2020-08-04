@@ -4,7 +4,7 @@
         {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
         {{ range (.Paginate $pages).Pages }}
         <article>
-            <em class="date">{{ .Date.Format "January 2, 2006" }}</em>
+            <time>{{ .Date.Format "January 2, 2006" }}</time>
             <h1>
                 <a href="{{ .Permalink }}">
                     {{ .Title }}
@@ -16,7 +16,7 @@
             </div>
             {{ end }}
             {{ if .Summary }}
-            <p>{{ chomp .Summary}}</p>
+            {{ chomp .Summary}}
             {{ end }}
             {{ if (and (.Site.Params.showReadMore) (.Truncated)) }}
             <p><a href="{{ .RelPermalink }}">Read more...</a></p>

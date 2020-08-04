@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div class="content">
 <!-- All of the site's posts grouped by year -->
   <h1>
     Archives
@@ -9,10 +10,10 @@
       {{ range ($pages.GroupByDate "2006") }}
           <h3>{{ .Key }}</h3> <!-- Display the year -->
 
-          <ul class="archives-list"> 
-            
+          <ul class="archives-list">
+
               {{ range (.Pages) }}
-             
+
                   <li class="archives-list-item">
                     <span class="archives-list-item-date">{{ .PublishDate.Format "Jan 2" }}</span>
                     <span>
@@ -25,5 +26,5 @@
   </div>
 
   <div class="page-footer"></div>
-
+</div>
 {{ end }}
