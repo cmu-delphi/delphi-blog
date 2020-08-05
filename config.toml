@@ -11,17 +11,17 @@ relativeURLs = true
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Blog"
+    url = "https://delphi.cmu.edu/blog/"
 [[menu.main]]
-    name = "Delphi Group"
+    name = "Delphi"
     url = "https://delphi.cmu.edu"
 [[menu.main]]
-    name = "COVIDcast Maps"
+    name = "COVIDcast"
     url = "https://covidcast.cmu.edu"
 [[menu.main]]
-    name = "COVIDcast Data"
-    url = "https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html"
+    name = "API"
+    url = "https://cmu-delphi.github.io/delphi-epidata/"
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/cmu-delphi"
