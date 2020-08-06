@@ -40,4 +40,7 @@
     {{- if not .Site.IsServer -}}
       {{ template "_internal/google_analytics.html" . }}
     {{- end -}}
+
+    {{ partial "math.html" . }}
+    {{ partial "highlight.html" . }}
 </head>

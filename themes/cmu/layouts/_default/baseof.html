@@ -8,14 +8,22 @@
             <div id="content" class="content-container">
                 {{ block "main" . }}
                 {{ end }}
-                {{ partial "math.html" . }}
-                {{ partial "highlight.html" . }}
             </div>
             {{ partial "footer.html" . }}
         </div>
 
-        <script src="//www.cmu.edu/common/standard-v6/js/list.min.js" type="text/javascript"></script>
-        <script src="//www.cmu.edu/common/standard-v6/js/jquery-1.10.1.min.js" type="text/javascript"></script>
-        <script src="//www.cmu.edu/common/standard-v6/js/main.min.js" type="text/javascript"></script>
+        <script src="https://www.cmu.edu/common/standard-v6/js/list.min.js" type="text/javascript"></script>
+        <script src="https://www.cmu.edu/common/standard-v6/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+        <script>
+            // HACK patch jquery to avoid one selector which removes all custom styles in main.min.js
+            window.$ = function() {
+                if (arguments.length === 1 && arguments[0] === 'span[style]') {
+                    return jQuery.call(this, 'span.noDontDoThis[style]');
+                }
+                return jQuery.apply(this, Array.from(arguments));
+            }
+            Object.assign(window.$, jQuery);
+        </script>
+        <script src="https://www.cmu.edu/common/standard-v6/js/main.min.js" type="text/javascript"></script>
     </body>
 </html>
