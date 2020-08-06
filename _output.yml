@@ -1,2 +1,3 @@
 blogdown::html_page:
-  dev: "svg"
+  # force svglite device, since cairo is a mess
+  dev: "svglite"
