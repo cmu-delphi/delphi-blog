@@ -1,6 +1,6 @@
-baseurl = "/blog/"
+baseURL = "https://delphi.cmu.edu/blog"
 languageCode = "en-us"
-title = "Words From the Oracle"
+title = "Words from the Oracle"
 theme = "cmu"
 googleAnalytics = ""
 disqusShortname = ""

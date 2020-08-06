@@ -1,18 +1,17 @@
 {{ define "main" }}
-<div class="article-content content">
-    <time>{{ .Date.Format "January 2, 2006" }}</time>
-    <h1 class="post-title">{{ .Title }}</h1>
-    {{ if .Params.author }}
-    <div class="contact">
-        <span>{{ .Params.author }}</span>
-    </div>
-    {{ end }}
+<div class="article-content">
     {{ if .Date }}
+    <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ end }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ partial "share.html" . }}
+    {{ if .Params.author }}
+        <div class="contact">
+            <span>{{ .Params.author }}</span>
+        </div>
     {{ end }}
     <div>
-        <p>
         {{ .Content }}
-        </p>
     </div>
     {{ template "_internal/disqus.html" . }}
 

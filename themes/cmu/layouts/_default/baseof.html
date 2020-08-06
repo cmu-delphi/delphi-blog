@@ -6,8 +6,11 @@
         <div id="container">
             {{ partial "header.html" . }}
             <div id="content" class="content-container">
+                <div class="content">
+                    <div></div>
                 {{ block "main" . }}
                 {{ end }}
+                </div>
                 {{ partial "math.html" . }}
                 {{ partial "highlight.html" . }}
             </div>
