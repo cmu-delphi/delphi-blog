@@ -1,0 +1,37 @@
+on:
+  push
+
+name: ci
+
+# based on https://github.com/r-lib/actions/blob/master/examples/blogdown.yaml
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+      - name: Install pandoc
+        uses: r-lib/actions/setup-pandoc@v1
+      - name: Restore Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/Library/Application Support/renv
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+      - name: Run Prepare Script
+        run: |
+          Rscript ./R/prepare.R
+      - name: Build site
+        run: |
+          Rscript -e 'blogdown::build_site()'
+
+      - name: Deploy Main
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./public
+

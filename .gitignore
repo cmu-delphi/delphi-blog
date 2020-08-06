@@ -3,3 +3,8 @@
 .RData
 .Ruserdata
 .DS_Store
+/public
+/content/**/*.html
+/static/post/**
+/static/rmarkdown-libs/**
+/resources/_gen

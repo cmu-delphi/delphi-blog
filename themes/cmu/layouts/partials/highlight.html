@@ -1,0 +1,6 @@
+{{ if or .Page.Params.highlight .Site.Params.highlight }}
+<link rel="stylesheet"
+      href="{{ "highlight/styles/default.css" | relURL }}">
+<script src="{{ "highlight/highlight.pack.js" | relURL }}"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{{ end }}
