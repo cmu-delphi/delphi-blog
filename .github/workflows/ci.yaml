@@ -7,22 +7,16 @@ name: ci
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Setup R
-        uses: r-lib/actions/setup-r@master
-      - name: Install pandoc
-        uses: r-lib/actions/setup-pandoc@v1
-      - name: Restore Cache
-        uses: actions/cache@v2
+      - uses: s-weigand/setup-conda@v1
         with:
-          path: "%LOCALAPPDATA%/renv"
-          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-renv-
-
+          activate-conda: false
+      - name: Setup R
+        run: |
+          conda install r pandoc r-cario r-blogdown
       - name: Run Prepare Script
         run: |
           Rscript ./R/prepare.R
