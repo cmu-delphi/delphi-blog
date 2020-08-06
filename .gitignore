@@ -4,3 +4,6 @@
 .Ruserdata
 .DS_Store
 /public
+/content/**/*.html
+/static/post/**
+/resources/_gen
