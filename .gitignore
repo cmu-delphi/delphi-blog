@@ -6,4 +6,5 @@
 /public
 /content/**/*.html
 /static/post/**
+/static/rmarkdown-libs/**
 /resources/_gen
