@@ -16,7 +16,7 @@ jobs:
           activate-conda: false
       - name: Setup R
         run: |
-          conda install r pandoc r-cario r-blogdown
+          conda install r pandoc r-cairo
       - name: Run Prepare Script
         run: |
           Rscript ./R/prepare.R
