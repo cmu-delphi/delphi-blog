@@ -1,6 +1,6 @@
 baseurl = "/blog/"
 languageCode = "en-us"
-title = "Delphi Blog"
+title = "Words From the Oracle"
 theme = "hugo-theme-noteworthy"
 googleAnalytics = ""
 disqusShortname = ""
@@ -27,7 +27,7 @@ relativeURLs = true
     url = "https://github.com/cmu-delphi"
 
 [params]
-    description = "The blog of the Delphi epidemiological forecasting group at Carnegie Mellon University."
+    description = "The blog of the Delphi group at Carnegie Mellon University."
 
     [params.logo]
     url = "delphi_logo.png"
