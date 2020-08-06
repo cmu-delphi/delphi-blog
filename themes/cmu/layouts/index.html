@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="article-content">
+<div class="article-content content">
         <!-- Range over the pages and only include the ones that are a post type -->
         {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
         {{ range (.Paginate $pages).Pages }}
