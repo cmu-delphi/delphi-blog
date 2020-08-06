@@ -7,7 +7,7 @@ name: ci
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: macos-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -18,11 +18,10 @@ jobs:
       - name: Restore Cache
         uses: actions/cache@v2
         with:
-          path: "%LOCALAPPDATA%/renv"
+          path: ~/Library/Application Support/renv
           key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
           restore-keys: |
             ${{ runner.os }}-renv-
-
       - name: Run Prepare Script
         run: |
           Rscript ./R/prepare.R
