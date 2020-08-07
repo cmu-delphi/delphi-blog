@@ -3,16 +3,14 @@
     {{ if .Date }}
     <time>{{ .Date.Format "January 2, 2006" }}</time>
     {{ end }}
-    <h1 class="post-title">{{ .Title }}</h1>
-    {{ partial "share.html" . }}
+    <h1>{{ .Title }}</h1>
     {{ if .Params.author }}
         <div class="contact">
             <span>{{ .Params.author }}</span>
         </div>
     {{ end }}
-    <div>
-        {{ .Content }}
-    </div>
+    {{ partial "share.html" . }}
+    {{ .Content }}
     {{ template "_internal/disqus.html" . }}
 
     {{ if .Site.Params.enableKofi }}

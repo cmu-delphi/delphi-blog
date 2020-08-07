@@ -25,6 +25,15 @@ $code: Menlo,Monaco,"Courier New",monospace;
 /* STYLES ========================================================================== */
 // TEXT
 
+#container > header {
+    display: flex;
+    flex-direction: column;
+}
+
+#sitename {
+    order: 4;
+}
+
 .article-content {
     position: relative;
 }
@@ -50,10 +59,6 @@ time {
 
 time + h1 {
     padding: 0.1em 0 0.5em 0;
-}
-
-.post-title {
-    padding-bottom: 0.5em;
 }
 
 #container {
