@@ -13,18 +13,24 @@ relativeURLs = true
 [[menu.main]]
     name = "Delphi"
     url = "https://delphi.cmu.edu/"
+    weight = 1
 [[menu.main]]
     name = "COVIDcast"
     url = "https://covidcast.cmu.edu"
+    weight = 2
 [[menu.main]]
     name = "Data"
     url = "https://cmu-delphi.github.io/delphi-epidata/"
+    weight = 3
 [[menu.main]]
+    identifier = "blog"
     name = "Blog"
     url = "https://delphi.cmu.edu/blog"
+    weight = 4
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/cmu-delphi/"
+    weight = 5
 
 [params]
     description = "The blog of the Delphi group at Carnegie Mellon University."
