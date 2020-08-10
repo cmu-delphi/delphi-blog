@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plot on The Delphi Blog</title>
+    <link>http://rosmarus.refsmmat.com/blog/tags/plot/</link>
+    <description>Recent content in plot on The Delphi Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rosmarus.refsmmat.com/blog/tags/plot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Template Post</title>
+      <link>http://rosmarus.refsmmat.com/blog/2015/07/23/template-post/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rosmarus.refsmmat.com/blog/2015/07/23/template-post/</guid>
+      <description>
+
+
+&lt;p&gt;Each blog post is an R Markdown document. For more details on using R Markdown
+see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;. The first paragraph or so will appear on the
+front page; by default the first 70 words are used, but you should instead write
+the first paragraph so it can serve as a summary, and mark the split point
+yourself like this:&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
