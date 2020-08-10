@@ -33,7 +33,7 @@ relativeURLs = false
     weight = 5
 
 [params]
-    description = "News, findings, and musings from the epidemic research team."
+    description = "News, findings, and musings from the epidemic tracking and forecasting team."
     highlight = true
     math = true
     showReadMore = true
