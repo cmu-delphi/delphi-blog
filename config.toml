@@ -36,9 +36,10 @@ relativeURLs = false
     description = "News, findings, and musings from the epidemic research team."
     highlight = true
     math = true
+    showReadMore = true
+
     [params.logo]
     url = "delphi_logo.png"
     width = 50
     height = 50
     alt = "Logo"
-
