@@ -28,7 +28,7 @@ relativeURLs = false
     url = "https://delphi.cmu.edu/blog"
     weight = 4
 [[menu.main]]
-    name = "GitHub"
+    name = "Github"
     url = "https://github.com/cmu-delphi/"
     weight = 5
 
