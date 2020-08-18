@@ -51,6 +51,14 @@ details.code-wrapper {
     order: 4;
 }
 
+#sitename+nav {
+    padding-top: 0;
+}
+
+#sitename+nav ul li {
+    padding-top: 0.5em;
+}
+
 .content>div {
     display: block;
 }
