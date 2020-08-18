@@ -18,14 +18,14 @@
             {{ if .Summary }}
             {{ chomp .Summary}}
             {{ end }}
-            {{ if (and (.Site.Params.showReadMore) (.Truncated)) }}
+            {{ if .Site.Params.showReadMore }}
             <p><a href="{{ .RelPermalink }}">Read more...</a></p>
             {{ end }}
             <div class="post-footer">
                 <!-- Display tags -->
                 {{if .Params.tags}}
                     {{ range .Params.tags }}
-                        <a class="tag" href="/tags/{{ . | urlize }}">#{{.}}</a>
+                        <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{.}}</a>
                     {{ end }}
                 {{ end }}
             </div>

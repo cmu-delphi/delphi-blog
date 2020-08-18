@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on The Delphi Blog</title>
+    <link>https://delphi.cmu.edu/blog/tags/</link>
+    <description>Recent content in Tags on The Delphi Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://delphi.cmu.edu/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>COVIDcast</title>
+      <link>https://delphi.cmu.edu/blog/tags/covidcast/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://delphi.cmu.edu/blog/tags/covidcast/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
