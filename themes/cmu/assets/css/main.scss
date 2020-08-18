@@ -30,8 +30,25 @@ $code: Menlo,Monaco,"Courier New",monospace;
     flex-direction: column;
 }
 
+.article-content pre {
+    overflow: auto;
+    background: unset;
+}
+
+details.code-wrapper {
+    padding: 1em 1em 0 1em;
+
+    > pre {
+        padding: 0;
+    }
+}
+
 #sitename {
     order: 4;
+}
+
+.content>div {
+    display: block;
 }
 
 .article-content {
