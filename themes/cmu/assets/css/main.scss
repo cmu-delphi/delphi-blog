@@ -41,6 +41,10 @@ details.code-wrapper {
     > pre {
         padding: 0;
     }
+
+    > summary {
+        display: list-item;
+    }
 }
 
 #sitename {
