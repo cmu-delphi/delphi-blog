@@ -41,10 +41,22 @@ details.code-wrapper {
     > pre {
         padding: 0;
     }
+
+    > summary {
+        display: list-item;
+    }
 }
 
 #sitename {
     order: 4;
+}
+
+#sitename+nav {
+    padding-top: 0;
+}
+
+#sitename+nav ul li {
+    padding-top: 0.5em;
 }
 
 .content>div {
