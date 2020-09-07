@@ -1,136 +1,30 @@
-<!DOCTYPE html>
-
-<html lang="en-us">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
-
-    <title>COVID-19 Symptom Surveys through Facebook | The Delphi Blog</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
-    
-    
-    <meta name="theme-color" content="#ffffff">
-
-    
-    <link
-      href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link href="//www.cmu.edu/common/standard-v6/css/main.min.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="//www.cmu.edu/common/standard-v6/css/print.min.css" media="print" rel="stylesheet" type="text/css" />
-
-    
-    
-    <link rel="stylesheet" href="https://delphi.cmu.edu/blog/css/main.min.d75c1a93a82aca1a5f117406227266d68f65616e2022da23f76560cdf8472dff.css"/>
-
-    
-    
-    
-
-    
-    
-
-    <script src="https://www.cmu.edu/common/standard-v6/js/list.min.js" type="text/javascript"></script>
-    <script src="https://www.cmu.edu/common/standard-v6/js/jquery-1.10.1.min.js" type="text/javascript"></script>
-    <script src="https://www.cmu.edu/common/standard-v6/js/main.min.js" type="text/javascript"></script>
-    
-
-<link rel="stylesheet" type="text/css" href="/blog/css/katex.min.css" crossorigin="anonymous">
-<script defer type="text/javascript" src="/blog/js/katex.min.js" crossorigin="anonymous"></script>
-<script defer type="text/javascript" src="/blog/js/auto-render.min.js" crossorigin="anonymous"></script>
-<script>
-    
-    $(document).ready(function() {
-        
-        Array.from(document.querySelectorAll('.math')).forEach((elem) => renderMathInElement(elem));
-    });
-</script>
+---
+title: "COVID-19 Symptom Surveys through Facebook"
+author: "Alex Reinhart and Ryan Tibshirani"
+date: 2020-08-26
+tags: ["symptom surveys"]
+output:
+  html_document:
+    code_folding: hide
+---
 
 
-    
-<link rel="stylesheet"
-      href="/blog/highlight/styles/default.css">
-<script src="/blog/highlight/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
-</head>
-
-    <body>
-        <div id="container">
-            <header>
-    <div class="roof red invert">
-        <div>
-            <a class="wordmark" href="//www.cmu.edu/">Carnegie Mellon University</a>
-            <a aria-haspopup="true" aria-label="Menu" class="menu-btn" href="#nav"><b>&#8212;</b><b>&#8212;</b><b>&#8212;</b></a>
-            <form action="https://web-search.andrew.cmu.edu/search" class="search">
-                <input name="entqr" type="hidden" value="3"/>
-                <input name="entsp" type="hidden" value="a"/>
-                <input name="sort" type="hidden" value="date:D:L:d1"/>
-                <input name="output" type="hidden" value="xml_no_dtd"/>
-                <input name="client" type="hidden" value="default_frontend"/>
-                <input name="ud" type="hidden" value="1"/>
-                <input name="oe" type="hidden" value="UTF-8"/>
-                <input name="ie" type="hidden" value="UTF-8"/>
-                <input name="proxystylesheet" type="hidden" value="default_frontend"/>
-                <label><span>Search</span>
-                    <input name="q" placeholder="Search" title="Type keywords into this box, then press enter."/>
-                </label>
-                <button title="Submit" type="submit">Search</button>
-                <input name="site" type="hidden" value=""/>
-            </form>
-        </div>
-    </div>
-    <div id="sitename">
-        <h1><a href="/blog/">The Delphi Blog</a></h1>
-        
-        <h2>
-            News, findings, and musings from the epidemic tracking and forecasting team.
-        </h2>
-        
-    </div>
-</header>
-            <div id="content" class="content-container">
-                <div class="content">
-                    <div class="hidden"></div>
-                
-<div class="article-content">
-    
-    <time>August 26, 2020</time>
-    
-    <h1>COVID-19 Symptom Surveys through Facebook</h1>
-    
-        <div class="contact">
-            <span>Alex Reinhart and Ryan Tibshirani</span>
-        </div>
-    
-    <ul class="social third">
-    <li>
-        <a class="facebook" title="Share on Facebook" target="_blank"
-            rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdelphi.cmu.edu%2Fblog%2F2020%2F08%2F26%2Fcovid-19-symptom-surveys-through-facebook%2F">
-            Facebook
-        </a>
-    </li>
-    <li>
-        <a class="twitter" title="Share on Twitter" target="_blank"
-            rel="noopener noreferrer" href="https://twitter.com/share?text=COVID-19&#43;Symptom&#43;Surveys&#43;through&#43;Facebook&amp;url=https%3A%2F%2Fdelphi.cmu.edu%2Fblog%2F2020%2F08%2F26%2Fcovid-19-symptom-surveys-through-facebook%2F">
-            Twitter
-        </a>
-    </li>
-    <li>
-        <a class="linkedin" title="Share on LinkedIn" target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;title=COVID-19&#43;Symptom&#43;Surveys&#43;through&#43;Facebook&amp;url=https%3A%2F%2Fdelphi.cmu.edu%2Fblog%2F2020%2F08%2F26%2Fcovid-19-symptom-surveys-through-facebook%2F">
-            LinkedIn
-        </a>
-    </li>
-</ul>
-    <p>Since April 2020, in collaboration with Facebook,
+<p>Since April 2020, in collaboration with Facebook,
+partner universities, and public health officials,
+we’ve been conducting a massive daily survey to monitor
+the spread and impact of the COVID-19 pandemic in the United States.
+Our survey, advertised by Facebook, is taken by about 74,000 people each day.
+Respondents provide information about COVID-related
+symptoms, contacts, risk factors, and demographics,
+allowing us to examine county-level trends across the US.
+We believe that this combination of <em>detail</em> and <em>scale</em>
+has never before been available in a public health emergency.
+In this post, we’ll share some of our initial survey findings,
+show you how to access the data, and highlight
+some of the exciting new directions that we’re pursuing.</p>
+<!--more-->
+<p>Since April 2020, in collaboration with Facebook,
 partner universities, and public health officials,
 we’ve been conducting a massive daily survey to monitor
 the spread and impact of the COVID-19 pandemic in the United States.
@@ -667,64 +561,3 @@ Delphi group, and an Associate Professor in the Department of Statistics &amp; D
 Science and the Machine Learning Department at CMU. He is also an Amazon
 Scholar.</em></p>
 </div>
-
-    
-
-    
-
-    <div class="page-footer">
-        
-        <hr class="footer-divider">
-        
-            <a class="tag" href="/blog/tags/symptom-surveys">#symptom surveys</a>
-        
-      
-    </div>
-
-</div>
-
-                </div>
-            </div>
-            <footer class="grid column3 invert">
-	<div>
-    <ul>
-        <li>&#169; <span id="js-current-year">2020</span> Delphi group authors.</li>
-    </ul>
-    Text and figures released under CC BY 4.0<a href="https://creativecommons.org/licenses/by/4.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" /></a>;
-    code under the <a href="https://opensource.org/licenses/MIT">MIT license</a>.
-</div>
-
-	
-<div>
-    <ul class="social third">
-        
-        
-        
-        
-        
-    </ul>
-</div>
-
-	<nav id="nav">
-  <ul>
-    
-    <li class=""><a class="external" href="https://delphi.cmu.edu/">Delphi</a></li>
-    
-    <li class=""><a class="external" href="https://covidcast.cmu.edu">COVIDcast</a></li>
-    
-    <li class=""><a class="external" href="https://cmu-delphi.github.io/delphi-epidata/">Data</a></li>
-    
-    <li class="active"><a class="" href="https://delphi.cmu.edu/blog">Blog</a></li>
-    
-    <li class=""><a class="external" href="https://github.com/cmu-delphi/">GitHub</a></li>
-    
-  </ul>
-</nav>
-
-
-	<script src="https://delphi.cmu.edu/blog/js/main.min.be72ae52436738d1077490358c82a9681611fc5501388cdcddd185473ecfd791.js" integrity="sha256-vnKuUkNnONEHdJA1jIKpaBYR/FUBOIzc3dGFRz7P15E=" crossorigin="anonymous"></script>
-</footer>
-
-        </div>
-    </body>
-</html>
