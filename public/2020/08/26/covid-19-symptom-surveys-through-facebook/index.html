@@ -390,12 +390,10 @@ plot_one = function(geo_value, title = NULL, xlab = NULL,
   trans12 = function(x) trans(x, range1, range2)
   trans21 = function(x) trans(x, range2, range1)
 
-  # First find the state, find abbreviation, then set title
-  state_name = state_census %&gt;%
-    filter(STATE == as.numeric(substr(geo_value, 1, 2))) %&gt;%
-    pull(NAME)
-  state_abb = state.abb[state.name == state_name]
-  title = paste0(fips_to_name(geo_value), &quot;, &quot;, state_abb)
+  # Find state name, find abbreviation, then set title
+  state_name = fips_to_name(paste0(substr(geo_value, 1, 2), &quot;000&quot;))
+  state_abbr = name_to_abbr(state_name)
+  title = paste0(fips_to_name(geo_value), &quot;, &quot;, state_abbr)
 
   # Transform the combined signal to the incidence range, then stack
   # these rowwise into one data frame
@@ -543,7 +541,7 @@ around the same time as the correlations increased.</p>
   labs(title = &quot;Median absolute deviation in COVID-19 case rates&quot;,
        subtitle = sprintf(&quot;Over all counties with at least %i cumulative cases&quot;,
                           case_num), x = &quot;Date&quot;, y = &quot;Median abs deviation&quot;) +
-  theme_bw() + theme(legend.pos = &quot;bottom&quot;, legend.title  = element_blank())</code></pre>
+  theme_bw() </code></pre>
 <p><img src="/blog/post/2020-08-11-fb-survey_files/figure-html/unnamed-chunk-6-1.svg" width="576" /></p>
 </div>
 <div id="correlations-sliced-by-county" class="section level3">
