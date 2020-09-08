@@ -1,4 +1,4 @@
-install.packages(c('blogdown', 'svglite', 'devtools'))
+install.packages(c('blogdown', 'svglite', 'devtools', 'gridExtra'))
 
 blogdown::install_hugo()
 
