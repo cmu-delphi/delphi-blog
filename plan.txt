@@ -24,16 +24,27 @@ but still supports API access
 - Hopefully by this point we'll have more stuff to show off too, like basic
 correlation functions, signal processing functions, etc. 
 
-## Tutorial on Forecaster Evaluation.  Jacob + ?
-- This would be very important and impactful
+## Quantile Modeling: Forecast Scoring Rules and Ensembles. Ryan
+- I have two notebooks, one on forecasting scoring rules, and ensembles
+- Basically just sets up introduces the technical machinery needed to understand
+forecasting and ensembling 
+- This post might be a technical outlier compared to the others (which is OK) 
+
+## Why is COVID-19 Forecasting Hard?  Larry + Rob (+ Ryan?)
+- High-level, what are the things that make forecasting a hard problem in the
+current pandemic?
+- Back up with lots of examples, both instance-specific, and evaluation
+- Gets us to ease into forecast evaluation without unloading all the details 
+
+## Tutorial on Forecaster Evaluation.  Jacob (+ James or Alden?)
+- Now unload all the details on evaluation.  This should be very important and
+impactful 
 - Basically go through a demo evaluation report comparing a bunch of models, and
 first we should probably get the "OK" from the authors of those models
 - We can also use this to preview the evalforecast package
-- Question is, do we need to have a separate, earlier blog post introducing
-mathematically the various notions of scoring forecasts?  If so Ryan has as a
-notebook on that already (see the first in the list on "Other potential ideas") 
+- Can also include analysis from Jacob's mixed effects model 
 
-## "Simple" Statistical Forecasts.  Larry + Rob + Ryan 
+## "Simple" Statistical Forecasts.  Larry + Rob (+ Ryan?)
 - Explain the CMUDelphi-TimeSeries models, both county and state. 
 - Position it very carefully. It is simple and more like a "smart straw man",
 instead of "magic".    
@@ -41,12 +52,9 @@ instead of "magic".
 improvements that were "left on the table" 
 - Give basic overview, basic evaluation details, and our summary of its
 strengths and weaknesses  
-- Long technical appendix of plots (or link to an external notebook?) 
 
 # Other potential ideas
 
-## Thoughts on Forecast Scoring Rules?  Ryan
-## Thoughts on Density versus Quantile Ensembles?  Ryan
 ## Hotspot detection with the COVIDcast indicators?  
 ## Insights from Change Healthcare data?
 ## Insights from full Facebook survey?
