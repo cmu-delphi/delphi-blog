@@ -108,7 +108,7 @@ which already provides a nice sanity check.
 knitr::opts_chunk$set(cache = TRUE, autodep = TRUE, cache.comments = TRUE)
 ```
 
-```{r, message = FALSE, fig.width = 10, fig.height = 4}
+```{r, message = FALSE, warning = FALSE, fig.width = 10, fig.height = 4}
 library(covidcast)
 library(dplyr)
 library(gridExtra)
@@ -449,7 +449,7 @@ ggplot(df_cor, aes(x = time_value, y = value)) +
 ```
 
 Another interesting observation is that the correlations from either indicator
-increase dramatically sometime around mid June. 
+increase dramatically sometime around mid-June. 
 This could be because many counties saw big surges in COVID-19 activity around 
 that time. These surges created a larger spread between the COVID-19 case rates 
 across the country, and so county-to-county differences started to become easier
@@ -582,7 +582,7 @@ be made public, as usual, through our [COVIDcast
 API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html) 
 and [COVIDcast interactive map](https://covidcast.cmu.edu/).
 
-**Credits.** *Logan Brooks and Katie Mazaitis
+**Acknowledgements.** *Logan Brooks and Katie Mazaitis
 wrote the initial code for processing
 the survey data and producing estimates.
 Taylor Arnold, Amartya Basu, and Alex Reinhart
@@ -591,7 +591,7 @@ Logan Brooks, Pratik Patil, Rob Tibshirani, and Ryan Tibshirani
 developed the statistical methodology behind the estimates computed from the
 survey data. The COVIDcast API, which serves these estimates and is updated
 daily, is a much larger effort run by the Delphi group, and our entire
-engineering team is owed a lot of credit here. Ryan Tibshirani came up with the
+engineering team is owed a lot of credit here. Ryan came up with the
 idea of running the surveys, and worked with Facebook to make this a reality. 
 On the Facebook side, Curtiss Cobb and Jonathan McKay played big roles. The
 University of Maryland team, including Adrianne Bradford and Samantha Chiu and
