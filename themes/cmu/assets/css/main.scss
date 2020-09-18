@@ -138,6 +138,10 @@ blockquote {
     margin-left: 0em;
     margin-top: 0em;
 
+    /* Bypass CMU default styling */
+    font-size: 120% !important;
+    font-weight: normal !important;
+
     p {
         margin-bottom: 0em;
     }
