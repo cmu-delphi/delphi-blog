@@ -6,10 +6,34 @@
     <description>Recent content in symptom surveys on The Delphi Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://delphi.cmu.edu/blog/tags/symptom-surveys/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>COVID-19 Symptom Surveys through Google</title>
+      <link>https://delphi.cmu.edu/blog/2020/09/18/covid-19-symptom-surveys-through-google/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://delphi.cmu.edu/blog/2020/09/18/covid-19-symptom-surveys-through-google/</guid>
+      <description>
+
+
+&lt;p&gt;Since April 2020, in addition to our massive daily survey advertised on
+Facebook, we’ve been running (even-more-massive) surveys through Google to
+track the spread of COVID-19 in the United States.
+At its peak, our Google survey was taken by over 1.2 million people in a single
+day, and over its first month in operation, averaged over 600,000 daily
+respondents. In mid-May, we paused daily dissemination of this survey in order
+to focus on our (longer, more complex) survey through Facebook,
+but we plan to bring back the Google survey this fall.
+This short post covers some key differences between our Google and Facebook
+surveys, explains the backstory behind the “CLI-in-community” question
+as it arose through our collaboration with Google,
+and shares some of our thinking about next steps for the Google survey.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>COVID-19 Symptom Surveys through Facebook</title>
