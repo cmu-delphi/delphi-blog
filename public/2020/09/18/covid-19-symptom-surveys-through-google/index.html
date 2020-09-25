@@ -386,7 +386,7 @@ ggplot(df_cor, aes(x = time_value, y = value)) +
   scale_color_manual(values = ggplot_colors) +
   labs(title = &quot;Correlation between survey signals and case rates&quot;,
        subtitle = sprintf(&quot;Over all counties with at least %i cumulative cases&quot;,
-                          case_num, max(df_go$time_value)), 
+                          case_num), 
        x = &quot;Date&quot;, y = &quot;Correlation&quot;) +
     theme_bw() + theme(legend.pos = &quot;bottom&quot;, legend.title = element_blank())</code></pre>
 <p><img src="/blog/post/2020-09-18-google-survey_files/figure-html/unnamed-chunk-3-1.svg" width="576" /></p>
