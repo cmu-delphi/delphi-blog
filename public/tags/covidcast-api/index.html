@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>COVIDcast API | The Delphi Blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+    
+    
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <link
+      href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="//www.cmu.edu/common/standard-v6/css/main.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="//www.cmu.edu/common/standard-v6/css/print.min.css" media="print" rel="stylesheet" type="text/css" />
+
+    
+    
+    <link rel="stylesheet" href="https://delphi.cmu.edu/blog/css/main.min.7fd8da549e8e750964eb177dbe13dd6f275f7539a7bc804faa17409d46ce657b.css"/>
+
+    
+    
+    
+
+    
+    
+
+    
+    <link rel="alternate" type="application/rss+xml" href="https://delphi.cmu.edu/blog/tags/covidcast-api/index.xml" title="The Delphi Blog" />
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-88748454-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script src="https://www.cmu.edu/common/standard-v6/js/list.min.js" type="text/javascript"></script>
+    <script src="https://www.cmu.edu/common/standard-v6/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="https://www.cmu.edu/common/standard-v6/js/main.min.js" type="text/javascript"></script>
+    
+
+<link rel="stylesheet" type="text/css" href="/blog/css/katex.min.css" crossorigin="anonymous">
+<script defer type="text/javascript" src="/blog/js/katex.min.js" crossorigin="anonymous"></script>
+<script defer type="text/javascript" src="/blog/js/auto-render.min.js" crossorigin="anonymous"></script>
+<script>
+    
+    $(document).ready(function() {
+        
+        Array.from(document.querySelectorAll('.math')).forEach((elem) => renderMathInElement(elem));
+    });
+</script>
+
+
+    
+<link rel="stylesheet"
+      href="/blog/highlight/styles/default.css">
+<script src="/blog/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+    <body>
+        <div id="container">
+            <header>
+    <div class="roof red invert">
+        <div>
+            <a class="wordmark" href="//www.cmu.edu/">Carnegie Mellon University</a>
+            <a aria-haspopup="true" aria-label="Menu" class="menu-btn" href="#nav"><b>&#8212;</b><b>&#8212;</b><b>&#8212;</b></a>
+            <form action="https://web-search.andrew.cmu.edu/search" class="search">
+                <input name="entqr" type="hidden" value="3"/>
+                <input name="entsp" type="hidden" value="a"/>
+                <input name="sort" type="hidden" value="date:D:L:d1"/>
+                <input name="output" type="hidden" value="xml_no_dtd"/>
+                <input name="client" type="hidden" value="default_frontend"/>
+                <input name="ud" type="hidden" value="1"/>
+                <input name="oe" type="hidden" value="UTF-8"/>
+                <input name="ie" type="hidden" value="UTF-8"/>
+                <input name="proxystylesheet" type="hidden" value="default_frontend"/>
+                <label><span>Search</span>
+                    <input name="q" placeholder="Search" title="Type keywords into this box, then press enter."/>
+                </label>
+                <button title="Submit" type="submit">Search</button>
+                <input name="site" type="hidden" value=""/>
+            </form>
+        </div>
+    </div>
+    <div id="sitename">
+        <h1><a href="/blog/">The Delphi Blog</a></h1>
+        
+        <h2>
+            News, findings, and musings from the epidemic tracking and forecasting team.
+        </h2>
+        
+    </div>
+</header>
+            <div id="content" class="content-container">
+                <div class="content">
+                    <div class="hidden"></div>
+                
+
+  <h1>Tagged "COVIDcast API"</h1>
+  
+
+    
+    <article>
+            <h2>
+                <a href="https://delphi.cmu.edu/blog/2020/10/05/sharing-open-covid-19-data-with-the-covidcast-api/">
+                    Sharing Open COVID-19 Data with the COVIDcast API
+                </a>
+            </h2>
+            <div>
+                
+
+
+<p>One of our primary initiatives at the Delphi COVIDcast project
+has been to curate a diverse set of COVID-related data streams,
+and to make them freely available through our
+<a href="https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html">COVIDcast API</a>.
+These include both novel signals that we have collected and analyzed ourselves,
+such as our symptom survey <a href="https://delphi.cmu.edu/blog/2020/08/26/covid-19-symptom-surveys-through-facebook/">distributed by Facebook</a>
+to its users, <a href="https://delphi.cmu.edu/blog/2020/09/18/covid-19-symptom-surveys-through-google/">Google’s symptom survey</a> whose results are delivered to us,
+the percentage of doctor’s visits due to COVID-like illness,
+and results from Quidel’s antigen tests;
+and also existing signals, such as the confirmed case counts
+and deaths reported by USA Facts and Johns Hopkins University.
+The COVIDcast API freely provides researchers and decision-makers
+with the data they need to conduct their work, and
+is conveniently accessible via easy-to-use <a href="https://cmu-delphi.github.io/covidcast/covidcast-py/html/">Python</a>
+and <a href="https://cmu-delphi.github.io/covidcast/covidcastR/">R</a> packages.</p>
+
+                
+                <p><a href="/blog/2020/10/05/sharing-open-covid-19-data-with-the-covidcast-api/">Read more...</a></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>October 5, 2020</time>
+            </div>
+        </article>
+    
+
+                </div>
+            </div>
+            <footer class="grid column3 invert">
+	<div>
+    <ul>
+        <li>&#169; <span id="js-current-year">2020</span> Delphi group authors.</li>
+    </ul>
+    Text and figures released under CC BY 4.0<a href="https://creativecommons.org/licenses/by/4.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" /></a>;
+    code under the <a href="https://opensource.org/licenses/MIT">MIT license</a>.
+</div>
+
+	
+<div>
+    <ul class="social third">
+        
+        
+        
+        
+        
+    </ul>
+</div>
+
+	<nav id="nav">
+  <ul>
+    
+    <li class=""><a class="external" href="https://delphi.cmu.edu/">Delphi</a></li>
+    
+    <li class=""><a class="external" href="https://covidcast.cmu.edu">COVIDcast</a></li>
+    
+    <li class=""><a class="external" href="https://cmu-delphi.github.io/delphi-epidata/">Data</a></li>
+    
+    <li class="active"><a class="" href="https://delphi.cmu.edu/blog">Blog</a></li>
+    
+    <li class=""><a class="external" href="https://github.com/cmu-delphi/">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+
+	<script src="https://delphi.cmu.edu/blog/js/main.min.be72ae52436738d1077490358c82a9681611fc5501388cdcddd185473ecfd791.js" integrity="sha256-vnKuUkNnONEHdJA1jIKpaBYR/FUBOIzc3dGFRz7P15E=" crossorigin="anonymous"></script>
+</footer>
+
+        </div>
+    </body>
+</html>

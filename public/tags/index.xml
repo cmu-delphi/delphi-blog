@@ -6,10 +6,37 @@
     <description>Recent content in Tags on The Delphi Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://delphi.cmu.edu/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>COVIDcast</title>
+      <link>https://delphi.cmu.edu/blog/tags/covidcast/</link>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://delphi.cmu.edu/blog/tags/covidcast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COVIDcast API</title>
+      <link>https://delphi.cmu.edu/blog/tags/covidcast-api/</link>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://delphi.cmu.edu/blog/tags/covidcast-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>packages</title>
+      <link>https://delphi.cmu.edu/blog/tags/packages/</link>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://delphi.cmu.edu/blog/tags/packages/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>forecasting</title>
@@ -26,15 +53,6 @@
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://delphi.cmu.edu/blog/tags/symptom-surveys/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>COVIDcast</title>
-      <link>https://delphi.cmu.edu/blog/tags/covidcast/</link>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://delphi.cmu.edu/blog/tags/covidcast/</guid>
       <description></description>
     </item>
     
