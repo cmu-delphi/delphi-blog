@@ -1,5 +1,7 @@
 # delphi-blog
 
+[![Deploy Status](https://delphi.cmu.edu/~automation/public/github_deploy_repo/badge.php?repo=cmu-delphi/delphi-blog)](#)
+
 Repo for Delphi's blog.
 
 ## Writing posts
