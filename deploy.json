@@ -14,7 +14,7 @@
     "// htaccess",
     {
       "type": "move",
-      "src": "public/.htaccess",
+      "src": ".htaccess",
       "dst": "/var/www/html/blog/.htaccess",
       "add-header-comment": true
     }
