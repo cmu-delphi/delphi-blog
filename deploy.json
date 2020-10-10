@@ -9,7 +9,14 @@
        "src": "public/",
        "dst": "/var/www/html/blog/",
        "recursive": true,
-       "match": "^.*\\.(html|css|xml|js|jpg|png|svg|woff|ttf|woff2|htaccess)$"
+       "match": "^.*\\.(html|css|xml|js|jpg|png|svg|woff|ttf|woff2)$"
      }
+    "// htaccess",
+    {
+      "type": "move",
+      "src": "public/.htaccess",
+      "dst": "/var/www/html/blog/.htaccess",
+      "add-header-comment": true
+    },
   ]
 }
