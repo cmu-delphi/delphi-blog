@@ -9,7 +9,7 @@
        "src": "public/",
        "dst": "/var/www/html/blog/",
        "recursive": true,
-       "match": "^.*\\.(html|css|xml|js|jpg|png|svg|woff|ttf|woff2)$"
+       "match": "^.*\\.(html|css|xml|js|jpg|png|svg|woff|ttf|woff2|htaccess)$"
      }
   ]
 }
