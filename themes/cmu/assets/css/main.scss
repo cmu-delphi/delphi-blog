@@ -352,6 +352,10 @@ table {
     margin-bottom: 0em;
 }
 
+.teaser-image {
+    max-height: 16em;
+    object-fit: contain
+}    
 
 // BREAKPOINTS
 @import "custom";

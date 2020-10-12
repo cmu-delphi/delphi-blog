@@ -15,6 +15,9 @@
                 <span>{{ .Params.author }}</span>
             </div>
             {{ end }}
+            {{ if .Params.teaserImage }}
+            <img class="teaser-image" src="{{ .Params.teaserImage | relURL }}" alt="{{- .Params.description | safeHTMLAttr -}}">
+            {{ end }}
             {{ if .Summary }}
             {{ chomp .Summary}}
             {{ end }}
