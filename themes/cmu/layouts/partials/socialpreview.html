@@ -1,0 +1,35 @@
+{{ if .Params.description }}
+<meta name="description" content="{{- .Params.description | safeHTMLAttr -}}" />
+{{ end }}
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta
+  property="og:title"
+  content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}"
+/>
+{{ if .Params.description }}
+<meta
+  property="og:description"
+  content="{{- .Params.description | safeHTMLAttr -}}"
+/>
+{{ end }} {{ if .Params.teaserImage }}
+<meta property="og:image" content="{{ .Params.teaserImage | absURL }}" />
+{{ end }}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="{{ .Permalink }}" />
+<meta
+  property="twitter:title"
+  content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}"
+/>
+{{ if .Params.description }}
+<meta
+  property="twitter:description"
+  content="{{- .Params.description | safeHTMLAttr -}}"
+/>
+{{ end }} {{ if .Params.teaserImage }}
+<meta property="twitter:image" content="{{ .Params.teaserImage | absURL }}" />
+{{ end }}

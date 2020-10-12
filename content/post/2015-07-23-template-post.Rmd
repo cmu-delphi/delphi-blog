@@ -4,6 +4,8 @@ author: "Frida Gomam"
 date: 2015-07-23
 tags: ["R Markdown", "plot", "regression"]
 draft: true
+teaserImage: previews/pie.png
+description: This is a short summary description
 ---
 
 ```{r setup, include=FALSE}
