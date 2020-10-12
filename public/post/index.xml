@@ -6,10 +6,19 @@
     <description>Recent content in Posts on The Delphi Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://delphi.cmu.edu/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>New and Improved COVID Symptom Survey Tracks Testing and Mask-Wearing</title>
+      <link>https://delphi.cmu.edu/blog/2020/10/09/new-and-improved-covid-symptom-survey-tracks-testing-and-mask-wearing/</link>
+      <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://delphi.cmu.edu/blog/2020/10/09/new-and-improved-covid-symptom-survey-tracks-testing-and-mask-wearing/</guid>
+      <description>Beginning on September 8, 2020, we deployed a new version of our symptom survey. Facebook helps us recruit tens of thousands of respondents daily, and the new survey gives us unprecedented insights into the effects of COVID-19 across the United States. Today we release new public datasets and share maps revealing access to COVID testing, test results, and public use of masks.</description>
+    </item>
     
     <item>
       <title>Accessing Open COVID-19 Data via the COVIDcast Epidata API</title>
