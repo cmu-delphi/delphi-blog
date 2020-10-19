@@ -36,7 +36,17 @@
         {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       {{ end }}
       <guid>{{ .Permalink }}</guid>
-      <description>{{ .Content | html }}</description>
+      <description>
+    {{- $html := htmlUnescape .Content | safeHTML -}}
+    {{- $srcs := findRE "src=\"([^\"]*)\"" $html -}}
+    {{- range $src := $srcs -}}
+      {{- $absSrc := strings.TrimPrefix "src=\"" $src -}}
+      {{- $absSrc = strings.TrimSuffix "\"" $absSrc  -}}
+      {{- $absSrc = printf "src=\"%s\"" ($absSrc | absURL) -}}
+      {{- $html = replace $html $src $absSrc -}}
+    {{- end }}
+    {{- $html -}}
+      </description>
     </item>
     {{ end }}
   </channel>
