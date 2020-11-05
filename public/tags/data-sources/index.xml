@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data sources on The Delphi Blog</title>
+    <link>https://delphi.cmu.edu/blog/tags/data-sources/</link>
+    <description>Recent content in data sources on The Delphi Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://delphi.cmu.edu/blog/tags/data-sources/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Syndromic COVID-19 Indicator Based on Insurance Claims of Outpatient Visits</title>
+      <link>https://delphi.cmu.edu/blog/2020/11/05/a-syndromic-covid-19-indicator-based-on-insurance-claims-of-outpatient-visits/</link>
+      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://delphi.cmu.edu/blog/2020/11/05/a-syndromic-covid-19-indicator-based-on-insurance-claims-of-outpatient-visits/</guid>
+      <description>
+
+
+&lt;p&gt;In previous posts, we discussed our massive ongoing symptom surveys that have reached over 12 million people in the U.S. since April 2020, in partnership with Facebook and Google. Another one of our major data initiatives is based on partnerships with healthcare systems, granting us access to various aggregate statistics from hospital records and insurance claims covering 10-15% of the United States population. From these data, we can extract informative indicators that can be early indicators of COVID activity. This post focuses on one indicator in particular, based on outpatient visits, and demonstrates both the challenges and promises associated with medical records data.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

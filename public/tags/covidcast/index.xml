@@ -6,10 +6,32 @@
     <description>Recent content in COVIDcast on The Delphi Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://delphi.cmu.edu/blog/tags/covidcast/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Syndromic COVID-19 Indicator Based on Insurance Claims of Outpatient Visits</title>
+      <link>https://delphi.cmu.edu/blog/2020/11/05/a-syndromic-covid-19-indicator-based-on-insurance-claims-of-outpatient-visits/</link>
+      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://delphi.cmu.edu/blog/2020/11/05/a-syndromic-covid-19-indicator-based-on-insurance-claims-of-outpatient-visits/</guid>
+      <description>
+
+
+&lt;p&gt;In previous posts, we discussed our massive ongoing symptom surveys that have reached over 12 million people in the U.S. since April 2020, in partnership with Facebook and Google. Another one of our major data initiatives is based on partnerships with healthcare systems, granting us access to various aggregate statistics from hospital records and insurance claims covering 10-15% of the United States population. From these data, we can extract informative indicators that can be early indicators of COVID activity. This post focuses on one indicator in particular, based on outpatient visits, and demonstrates both the challenges and promises associated with medical records data.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New and Improved COVID Symptom Survey Tracks Testing and Mask-Wearing</title>
+      <link>https://delphi.cmu.edu/blog/2020/10/12/new-and-improved-covid-symptom-survey-tracks-testing-and-mask-wearing/</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://delphi.cmu.edu/blog/2020/10/12/new-and-improved-covid-symptom-survey-tracks-testing-and-mask-wearing/</guid>
+      <description>Beginning on September 8, 2020, we deployed a new version of our symptom survey. Facebook helps us recruit tens of thousands of respondents daily, and the new survey gives us unprecedented insights into the effects of COVID-19 across the United States. Today we release new public datasets and share maps revealing access to COVID testing, test results, and public use of masks.</description>
+    </item>
     
     <item>
       <title>Accessing Open COVID-19 Data via the COVIDcast Epidata API</title>
@@ -35,6 +57,47 @@ The COVIDcast API freely provides researchers and decision-makers
 with the data they need to conduct their work, and
 is conveniently accessible via easy-to-use Python
 and R packages.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Can Symptoms Surveys Improve COVID-19 Forecasts?</title>
+      <link>https://delphi.cmu.edu/blog/2020/09/21/can-symptoms-surveys-improve-covid-19-forecasts/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://delphi.cmu.edu/blog/2020/09/21/can-symptoms-surveys-improve-covid-19-forecasts/</guid>
+      <description>
+
+
+&lt;p&gt;Building on our previous two posts (on our COVID-19 symptom surveys through
+Facebook and Google)
+this post offers a deeper dive into empirical analysis, examining whether the
+% CLI-in-community indicators from our two surveys can be used to improve
+the accuracy of short-term forecasts of county-level COVID-19 case rates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COVID-19 Symptom Surveys through Google</title>
+      <link>https://delphi.cmu.edu/blog/2020/09/18/covid-19-symptom-surveys-through-google/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://delphi.cmu.edu/blog/2020/09/18/covid-19-symptom-surveys-through-google/</guid>
+      <description>
+
+
+&lt;p&gt;Since April 2020, in addition to our massive daily survey advertised on
+Facebook, we’ve been running (even-more-massive) surveys through Google to
+track the spread of COVID-19 in the United States.
+At its peak, our Google survey was taken by over 1.2 million people in a single
+day, and over its first month in operation, averaged over 600,000 daily
+respondents. In mid-May, we paused daily dissemination of this survey in order
+to focus on our (longer, more complex) survey through Facebook,
+but we plan to bring back the Google survey this fall.
+This short post covers some key differences between our Google and Facebook
+surveys, explains the backstory behind the “CLI-in-community” question
+as it arose through our collaboration with Google,
+and shares some of our thinking about next steps for the Google survey.&lt;/p&gt;
 </description>
     </item>
     
