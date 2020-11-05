@@ -236,7 +236,8 @@ df_in_avg = df_in %&gt;% group_by(geo_value) %&gt;% summarize(value = mean(value
 # Set a bunch of fields so that the data frames know how to plot themselves
 df_fb_avg$time_value = df_in_avg$time_value = start_day
 df_fb_avg$issue = df_in_avg$issue = start_day
-attributes(df_fb_avg)$geo_type = attributes(df_in_avg)$geo_type = &quot;state&quot;
+attributes(df_fb_avg)$metadata$geo_type = &quot;state&quot;
+attributes(df_in_avg)$metadata$geo_type = &quot;state&quot;
 class(df_fb_avg) = c(&quot;covidcast_signal&quot;, class(df_fb_avg))
 class(df_in_avg) = c(&quot;covidcast_signal&quot;, class(df_in_avg))
 
@@ -596,7 +597,8 @@ order to estimate % CLI and % CLI-in-community signals there.</p>
 <pre class="r"><code># Set a bunch of fields so that the data frames know how to plot themselves
 df_cor1$time_value = df_cor2$time_value = start_day
 df_cor1$issue = df_cor2$issue = start_day
-attributes(df_cor1)$geo_type = attributes(df_cor2)$geo_type = &quot;county&quot;
+attributes(df_cor1)$metadata$geo_type = &quot;county&quot;
+attributes(df_cor2)$metadata$geo_type = &quot;county&quot;
 class(df_cor1) = class(df_cor2) = c(&quot;covidcast_signal&quot;, &quot;data.frame&quot;)
 
 # Plot choropleth maps, using the covidcast plotting functionality
@@ -692,6 +694,8 @@ Scholar.</em></p>
             <a class="tag" href="/blog/tags/symptom-surveys">#symptom surveys</a>
         
             <a class="tag" href="/blog/tags/covidcast">#COVIDcast</a>
+        
+            <a class="tag" href="/blog/tags/r">#R</a>
         
       
     </div>
